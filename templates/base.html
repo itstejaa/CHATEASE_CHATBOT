@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+    <h1>GAYATRI VIDYA PARISHAD COLLEGE OF ENGINEERING[GVPCE]</h1>
+    <h2>Gayatri Vidya Parishad (GVPCE) College of Engineering (Autonomous) is a private <br>engineering college in  Visakhapatnam, Andhra Pradesh, India. The college was<br> established in 1996 by the GVP Society, an educational organization in Visakhapatnam.</h2>
+
+
+    <div class="slide">
+    </div>
+
+    <div class="navbar"></div>
+    <button class="admin"><a href="/admin">Admin Login</a></button>   
+    <div class="bottombar"></div>
+    <div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi. My name is ChatEase. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div>
+                    
+                </div>
+                
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+
+    <script>
+        $SCRIPT_ROOT = { request.script_root|tojson };
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>

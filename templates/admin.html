@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin login </title>
+<style>
+    body {
+        background-image: url(https://www.collegebatch.com/static/clg-gallery/gayatri-vidya-parishad-college-of-engineering-visakhapatnam-248845.jpg);
+        background-size: cover ;
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;        
+    }
+    
+    .login-container {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        height: 300px;
+        width: 30%;
+        background-color: rgba(255, 255, 255 , 0.5);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+
+    
+    label {
+        margin-bottom: 5px;
+    }
+    
+    input {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+    
+    button {
+        padding: 8px 15px;
+        background-color: #ff0000;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    button:hover {
+        background-color: #ff4747;
+    }
+    h1 {
+        text-align: center;
+    }
+    button{
+        width: 30%;
+        
+    }
+</style>
+
+</head>
+<body>
+    
+<div class="login-container">
+    
+    <h1>Admin Login</h1>
+    <form id="login-form" method="post" action="showq">
+        <label for="username">Username:</label>
+        <input type="text" id="uid" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="pwd" name="password" required><br><br>  
+
+        <button type="submit">Login</button>
+    </form>
+</div>
+<script>
+</script>
+</body>
+</html>
